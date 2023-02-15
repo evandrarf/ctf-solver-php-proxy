@@ -53,9 +53,12 @@ function url_decrypt($url, $key = false)
   return $url;
 }
 
-$enc = "naXYqWtgZ5RkY2NpbWOWa2BqaZ-daJxskKWVm3PEms8";
-$plain = "file:///etc/passwd";
-$key = "51d9118b405145d3282ef1e5af406c6d";
+$enc = "";
+$plain = "";
+$key = "";
 
-// echo url_decrypt($enc, $plain);
+//get the app key
+echo url_decrypt($enc, $plain);
+
+//get the url enc
 echo url_encrypt($plain, $key);
